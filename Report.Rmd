@@ -2,7 +2,7 @@
 title: "Report"
 author: "Michelle Ruas"
 date: "19/04/2020"
-output: git_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
