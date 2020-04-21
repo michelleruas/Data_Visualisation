@@ -6,6 +6,7 @@ x <- murders$population /10^6
 y <- murders$total
 plot(x, y)
 
+update
 
 
 population_in_millions <- murders$population/10^6
@@ -21,3 +22,4 @@ log10_total_gun_murders <- log10(total_gun_murders)
 
 # Create a scatterplot with the log scale transformed population and murders 
 plot(log10_population, log10_total_gun_murders)
+
