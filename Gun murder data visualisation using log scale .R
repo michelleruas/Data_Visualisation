@@ -78,3 +78,4 @@ p + geom_point(aes(col = region), size = 3) +
 p + 
   geom_abline(intercept = log10(r), lty = 2, color = "darkgrey") +
   geom_point(aes(col = region), size = 3)
+

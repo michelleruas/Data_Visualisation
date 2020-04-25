@@ -1,35 +1,23 @@
-Report
+Gun Murder Data Visualisation Report
 ================
 Michelle Ruas
 19/04/2020
 
-## R Markdown
+Here is the displayed progression of being able to apply different
+functionality to the datasets in order to see visual improvement. This
+uses functions from the tidyverse and dslabs package and data from the
+murders
+    package.
 
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see <http://rmarkdown.rstudio.com>.
+    ## ── Attaching packages ────────────────────────────────────────────────────────── tidyverse 1.3.0 ──
 
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+    ## ✓ ggplot2 3.3.0     ✓ purrr   0.3.3
+    ## ✓ tibble  3.0.0     ✓ dplyr   0.8.5
+    ## ✓ tidyr   1.0.2     ✓ stringr 1.4.0
+    ## ✓ readr   1.3.1     ✓ forcats 0.5.0
 
-``` r
-summary(cars)
-```
+    ## ── Conflicts ───────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+    ## x dplyr::filter() masks stats::filter()
+    ## x dplyr::lag()    masks stats::lag()
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
-
-## Including Plots
-
-You can also embed plots, for example:
-
-![](Report_files/figure-gfm/pressure-1.png)<!-- -->
-
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+![](Report_files/figure-gfm/pressure-1.png)<!-- -->![](Report_files/figure-gfm/pressure-2.png)<!-- -->![](Report_files/figure-gfm/pressure-3.png)<!-- -->![](Report_files/figure-gfm/pressure-4.png)<!-- -->![](Report_files/figure-gfm/pressure-5.png)<!-- -->![](Report_files/figure-gfm/pressure-6.png)<!-- -->![](Report_files/figure-gfm/pressure-7.png)<!-- -->![](Report_files/figure-gfm/pressure-8.png)<!-- -->![](Report_files/figure-gfm/pressure-9.png)<!-- -->![](Report_files/figure-gfm/pressure-10.png)<!-- -->![](Report_files/figure-gfm/pressure-11.png)<!-- -->![](Report_files/figure-gfm/pressure-12.png)<!-- -->![](Report_files/figure-gfm/pressure-13.png)<!-- -->
