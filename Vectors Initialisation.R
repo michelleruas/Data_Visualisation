@@ -65,3 +65,65 @@ names(temp) <- city
 # Access the temperatures of Paris and San Juan
 c(temp[3],temp[5])
 
+# Create a vector m of integers that starts at 32 and ends at 99.
+m <- 32:99
+
+# Determine the length of object m.
+length(m)
+
+# Create a vector x of integers that starts at 12 and ends at 73.
+x <- 12:73
+
+# Determine the length of object x.
+length(x)
+
+# Create a vector with the multiples of 7, smaller than 50.
+seq(7, 49, 7) 
+
+# Create a vector containing all the positive odd numbers smaller than 100.
+# The numbers should be in ascending order
+seq(1,100,2)
+
+
+# We can create a vector with the multiples of 7, smaller than 50 like this 
+seq(7, 49, 7) 
+
+# But note that the second argument does not need to be the last number
+# It simply determines the maximum value permitted
+# so the following line of code produces the same vector as seq(7, 49, 7)
+seq(7, 50, 7)
+
+# Create a sequence of numbers from 6 to 55, with 4/7 increments and determine its length
+length(seq(6,55,4/7))
+
+
+# Store the sequence in the object a
+a <- seq(1,10, length.out =100)
+
+# Determine the class of a
+class(a)
+
+# Store the sequence in the object a
+a <- seq(1, 10)
+# Determine the class of a
+class(a)
+
+# Check the class of 1, assigned to the object a
+class(1)
+
+# Confirm the class of 1L is integer
+class(1L)
+
+# Define the vector x
+x <- c(1, 3, 5,"a")
+
+# Note that the x is character vector
+x
+
+# Use `as.numeric` to coerce `x` to a numeric vector. Be sure to reassign the new vector as `x`.
+x <- as.numeric(x)
+
+
+
+
+
