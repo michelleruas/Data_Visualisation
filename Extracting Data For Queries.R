@@ -1,5 +1,7 @@
 library(dslabs)
 data(heights)
+
+
 options(digits = 3) 
 
 average_height <- mean(heights$height)
@@ -23,5 +25,10 @@ x <- 50:82
 
 sum(!(x %in% heights$height))
 
+heights2 <- mutate(heights, ht_cm = height*2.54)
+heights2
 
+mean(heights2$ht_cm)
 
+females <- filter(heights2, sex == "Female")
+mean(females$ht_cm)
