@@ -54,5 +54,15 @@ my_states <- filter(murders, rate < 1 & region %in% c("Northeast", "West"))
 # Use select to show only the state name, the murder rate and the rank
 select(my_states, state, rate, rank)
 
+## Define the rate column
+murders <- mutate(murders, rate =  total / population * 100000, rank = rank(-rate))
+
+# show the result and only include the state, rate, and rank columns, all in one line
+filter(murders, rate < 1 & region %in% c("Northeast", "West")) %>% select(state, rate, rank)
+
+# Create new data frame called my_states (with specifications in the instructions)
+my_states <- murders %>% mutate(rate = total/population*100000, rank=rank(-rate)) %>% filter(region %in% c("Northeast", "West") & rate < 1) %>% select(state, rate, rank)
+
+
 
 
