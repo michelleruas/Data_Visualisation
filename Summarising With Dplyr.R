@@ -117,5 +117,23 @@ NHANES %>% group_by(AgeDecade, Gender) %>% summarize(average = mean(BPSysAve, na
 
 NHANES %>% filter(AgeDecade == " 40-49" & Gender == "male") %>% group_by(Race1) %>% summarize(average = mean(BPSysAve, na.rm = TRUE), standard_deviation = sd(BPSysAve, na.rm = TRUE)) %>% arrange(desc(average))
 
+dat <- us_contagious_diseases %>%
+  filter(year == 1967 & disease=="Measles" & !is.na(population)) %>% mutate(rate = count / population * 10000 * 52 / weeks_reporting) 
+
+state <- dat$state 
+state <- reorder(state, rate)
+rate <- dat$count/(dat$population/10000)*(52/dat$weeks_reporting)
+levels(state)
+
+#Re-order bar chart by rate
+data(us_contagious_diseases)
+
+dat <- us_contagious_diseases %>% filter(year == 1967 & disease=="Measles" & count>0 & !is.na(population)) %>%
+  mutate(rate = count / population * 10000 * 52 / weeks_reporting) %>%
+  mutate(state = reorder(state, rate))
+
+dat %>% ggplot(aes(state, rate)) +
+  geom_bar(stat="identity") +
+  coord_flip()
 
 
